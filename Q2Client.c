@@ -33,10 +33,10 @@ int main() {
       exit(1);
   }
 
-   // Receive the random number from the server
-   recv(clientSocket, &randomNumber, sizeof(randomNumber), 0);
-   printf("Received random number from server: %d\n", randomNumber);
-   close(clientSocket);
+  // Receive the random number from the server
+  recv(clientSocket, &randomNumber, sizeof(randomNumber), 0);
+  printf("Received random number from server: %d\n", randomNumber);
+  close(clientSocket);
 
   return 0;
   }
