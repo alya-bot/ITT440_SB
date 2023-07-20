@@ -7,7 +7,7 @@ def bar_to_atmosphere(pressure):
 
 def main():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_socket.bind((‘’, SERVER_PORT))
+    server_socket.bind(('', SERVER_PORT))
     server_socket.listen(1)
   
     print(f"Server is listening on {SERVER_PORT}...")
